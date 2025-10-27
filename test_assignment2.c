@@ -38,13 +38,12 @@ int output_contains(const char *expected) {
 // Test cases
 void test_normal_run() {
     run_program("./posix/pthreads_example 5");
-    assert(output_contains("Hello from thread 0"));
-    assert(output_contains("Hello from thread 1"));
-    assert(output_contains("Hello from thread 2"));
-    assert(output_contains("Hello from thread 3"));
-    assert(output_contains("Hello from thread 4"));
+    for (int i = 0; i < 5; i++) {
+        char buffer[32];
+        sprintf(buffer, "Hello from thread %d", i);
+        assert(output_contains(buffer));
+    }
     assert(output_contains("All threads completed."));
-    printf("✅ test_normal_run passed\n");
 }
 
 void test_missing_parameter() {
