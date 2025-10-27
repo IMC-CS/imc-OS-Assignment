@@ -26,7 +26,7 @@
    ./pthreads_example 5
    ```
    
-   Result:
+   Result: (sequence can be different)
    ```bash
       Hello from thread 0  
       Hello from thread 1  
