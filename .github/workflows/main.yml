@@ -30,4 +30,4 @@ jobs:
       - name: Run C tests
         run: |
           echo "Running tests on branch: ${{ github.ref_name }}"
-          ./test_assignment2.c
+          ./test_assignment2
