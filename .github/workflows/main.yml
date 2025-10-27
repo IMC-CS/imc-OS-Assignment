@@ -24,8 +24,8 @@ jobs:
 
       - name: Compile pthreads_example
         run: |
-          gcc -Wall -pthread posix/pthreads_example.c -o pthreads_example
-          gcc -Wall test_pthreads_example.c -o test_pthreads_example
+          gcc -Wall -pthread ./posix/pthreads_example.c -o pthreads_example
+          gcc -Wall test_assignment2.c -o test_assignment2
 
       - name: Run C tests
         run: |
