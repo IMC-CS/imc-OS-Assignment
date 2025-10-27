@@ -10,7 +10,7 @@
 
 ---
 
-2. **Modify `posix/pthreads_example.c` to Accept Thread Count**
+2. **Modify `pthreads_example.c` to Accept Thread Count**
 
    Modify the program to accept the **number of threads to create** as a command line parameter.
 
