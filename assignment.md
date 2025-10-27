@@ -51,4 +51,5 @@
    ```
    Result:
    ```bash
-   Too few threads. Please specify a number greater than zero. ```
+   Too few threads. Please specify a number greater than zero.
+   ```
