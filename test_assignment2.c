@@ -78,7 +78,7 @@ int main() {
     test_invalid_thread_count();
     test_normal_run2();
     test_invalid_thread_count2();
-    printf("\nAll tests passed!\n");
+    printf("\nAll tests of pthread passed!\n");
     // remove temporary file
     remove(TMPFILE);
     return 0;
