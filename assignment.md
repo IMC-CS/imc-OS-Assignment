@@ -10,12 +10,12 @@
 
 ---
 
-2. **Modify `pthreads_example.c` to Accept Thread Count**
-
-   Modify the program to accept the **number of threads to create** as a command line parameter.
+2. **Modify `create_pthread.c` to Accept Thread Count**  
+   Modify the program to accept the **number of threads to create** as a command line parameter.  
+   You can refer to './posix/pthreads_example.c`.
 
    **Note:**  
-   Creating threads with `pthread_create` may fail. This is usually due to:
+   Creating threads may fail. This is usually due to:
    - System resource limits (too many threads or insufficient memory)  
    - Invalid parameters  
 
@@ -37,7 +37,7 @@
    ```
    **Example runs:**
    ```bash
-   ./pthreads_example
+   ./create_pthread 
    ```
 
    Result:
@@ -47,7 +47,7 @@
 
    **Example runs:**
    ```bash
-   ./pthreads_example 0
+   ./create_pthread 0
    ```
    Result:
    ```bash
