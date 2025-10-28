@@ -22,6 +22,6 @@ int main() {
     swap(&x, &y);
     assert(x == 123 && y == 123);
 
-    printf("All tests passed!\n");
+    printf("All tests of swap passed!\n");
     return 0;
 }
