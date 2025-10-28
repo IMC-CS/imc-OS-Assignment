@@ -26,7 +26,7 @@ jobs:
         run: |
           gcc -Wall -pthread ./pthreads_example.c -o pthreads_example
           gcc -Wall test_assignment2.c -o test_assignment2
-          gcc -Wall -pthread ./int_swap.c.c -o int_swap.c
+          gcc -Wall -pthread ./int_swap.c -o int_swap
           gcc -Wall test_assignment1.c -o test_assignment1
 
       - name: Run C tests
