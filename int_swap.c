@@ -1,6 +1,15 @@
+/* int_swap.c */
 #include <stdio.h>
-#include <stdlib.h>
 
-void swap(int *a, int *b) {
-
+void swap() {
 }
+
+#ifdef TEST_STANDALONE // not remove!!!
+int main() {
+    int a = 5, b = 10;
+    printf("before: %d %d\n", a, b);
+    swap(&a, &b);
+    printf("after: %d %d\n", a, b);
+    return 0;
+}
+#endif // not remove!!!
