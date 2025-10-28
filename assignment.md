@@ -23,7 +23,7 @@
 
    **Example runs:**
    ```bash
-   ./pthreads_example 5
+   ./create_pthread 5
    ```
    
    Result: (sequence can be different)
