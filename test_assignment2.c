@@ -37,7 +37,7 @@ int output_contains(const char *expected) {
 
 // Test cases
 void test_normal_run() {
-    run_program("./posix/pthreads_example 5");
+    run_program("./pthreads_example 5");
     for (int i = 0; i < 5; i++) {
         char buffer[32];
         sprintf(buffer, "Hello from thread %d", i);
@@ -47,19 +47,19 @@ void test_normal_run() {
 }
 
 void test_missing_parameter() {
-    run_program("./posix/pthreads_example");
+    run_program("./pthreads_example");
     assert(output_contains("Error: Wrong number of parameters."));
     printf("✅ test_missing_parameter passed\n");
 }
 
 void test_invalid_thread_count() {
-    run_program("./posix/pthreads_example 0");
+    run_program("./pthreads_example 0");
     assert(output_contains("Too few threads. Please specify a number greater than zero."));
     printf("✅ test_invalid_thread_count passed\n");
 }
 
 void test_normal_run2() {
-    run_program("./posix/pthreads_example 2");
+    run_program("./pthreads_example 2");
     assert(output_contains("Hello from thread 0"));
     assert(output_contains("Hello from thread 1"));
     assert(output_contains("All threads completed."));
@@ -67,7 +67,7 @@ void test_normal_run2() {
 }
 
 void test_invalid_thread_count2() {
-    run_program("./posix/pthreads_example a");
+    run_program("./pthreads_example a");
     assert(output_contains("Too few threads. Please specify a number greater than zero."));
     printf("✅ test_invalid_thread_count passed\n");
 }
